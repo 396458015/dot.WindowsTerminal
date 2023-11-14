@@ -14,6 +14,9 @@
             "command": "paste"
         },
         {
+            "command": "find"
+        },
+        {
             "command": 
             {
                 "action": "scrollDown"
@@ -21,7 +24,12 @@
             "keys": "ctrl+shift+j"
         },
         {
-            "command": "find"
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            }
         },
         {
             "command": "unbound",
@@ -182,14 +190,6 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            }
-        },
-        {
-            "command": 
-            {
                 "action": "scrollUp"
             },
             "keys": "ctrl+shift+k"
@@ -216,16 +216,13 @@
         "list": 
         [
             {
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell"
-            },
-            {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "colorScheme": "One Half Dark",
+                "commandline": "D:\\Program Files\\Git\\bin\\bash.exe --login -i",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
+                "icon": "D:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "gitbash",
+                "startingDirectory": null
             },
             {
                 "bellStyle": "none",
@@ -259,6 +256,11 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2019",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
             }
         ]
     },
