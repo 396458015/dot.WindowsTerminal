@@ -11,10 +11,22 @@
             }
         },
         {
+            "command": 
+            {
+                "action": "newTab",
+                "index": 1
+            }
+        },
+        {
             "command": "paste"
         },
         {
-            "command": "find"
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+up"
         },
         {
             "command": 
@@ -22,6 +34,17 @@
                 "action": "scrollDown"
             },
             "keys": "ctrl+shift+j"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "alt+left"
+        },
+        {
+            "command": "find"
         },
         {
             "command": 
@@ -78,22 +101,6 @@
         {
             "command": "unbound",
             "keys": "ctrl+shift+1"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+up"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+down"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+right"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+left"
         },
         {
             "command": "unbound",
@@ -188,6 +195,38 @@
             "keys": "f11"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+3"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+4"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+5"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+6"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+7"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+8"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+9"
+        },
+        {
             "command": 
             {
                 "action": "scrollUp"
@@ -195,8 +234,54 @@
             "keys": "ctrl+shift+k"
         },
         {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "previousInOrder"
+            },
+            "keys": "ctrl+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "nextInOrder"
+            },
+            "keys": "ctrl+shift+l"
+        },
+        {
             "command": "toggleFocusMode",
             "keys": "delete"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane"
+            },
+            "keys": "alt+\\"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "alt+down"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "alt+right"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "keys": "ctrl+shift+n"
         }
     ],
     "alwaysShowTabs": true,
