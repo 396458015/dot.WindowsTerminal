@@ -13,9 +13,10 @@
         {
             "command": 
             {
-                "action": "newTab",
-                "index": 1
-            }
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+up"
         },
         {
             "command": "paste"
@@ -23,17 +24,12 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "keys": "alt+up"
+                "action": "newTab",
+                "index": 1
+            }
         },
         {
-            "command": 
-            {
-                "action": "scrollDown"
-            },
-            "keys": "ctrl+shift+j"
+            "command": "find"
         },
         {
             "command": 
@@ -44,7 +40,11 @@
             "keys": "alt+left"
         },
         {
-            "command": "find"
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "ctrl+shift+j"
         },
         {
             "command": 
@@ -233,17 +233,17 @@
         {
             "command": 
             {
-                "action": "scrollUp"
-            },
-            "keys": "ctrl+shift+k"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "previousInOrder"
             },
             "keys": "ctrl+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "keys": "ctrl+shift+k"
         },
         {
             "command": 
@@ -295,9 +295,13 @@
         }
     ],
     "alwaysShowTabs": true,
+    "autoHideWindow": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "experimental.rendering.forceFullRepaint": false,
+    "experimental.rendering.software": false,
+    "launchMode": "default",
     "profiles": 
     {
         "defaults": 
@@ -306,7 +310,8 @@
             {
                 "face": "Delugia Mono"
             },
-            "useAcrylic": true
+            "useAcrylic": true,
+            "useAtlasEngine": true
         },
         "list": 
         [
@@ -330,7 +335,8 @@
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "opacity": 80,
+                "opacity": 69,
+                "padding": "3",
                 "source": "Windows.Terminal.PowershellCore",
                 "useAcrylic": true
             },
