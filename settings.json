@@ -192,10 +192,6 @@
         },
         {
             "command": "unbound",
-            "keys": "f11"
-        },
-        {
-            "command": "unbound",
             "keys": "ctrl+shift+2"
         },
         {
@@ -225,6 +221,14 @@
         {
             "command": "unbound",
             "keys": "ctrl+shift+9"
+        },
+        {
+            "command": "unbound",
+            "keys": "win+sc(41)"
+        },
+        {
+            "command": "unbound",
+            "keys": "f11"
         },
         {
             "command": 
@@ -282,6 +286,12 @@
                 "action": "newTab"
             },
             "keys": "ctrl+shift+n"
+        },
+        {
+            "command": 
+            {
+                "action": "quakeMode"
+            }
         }
     ],
     "alwaysShowTabs": true,
