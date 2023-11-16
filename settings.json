@@ -13,9 +13,10 @@
         {
             "command": 
             {
-                "action": "newTab",
-                "index": 1
-            }
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+up"
         },
         {
             "command": "paste"
@@ -23,17 +24,20 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "keys": "alt+up"
+                "action": "newTab",
+                "index": 1
+            }
+        },
+        {
+            "command": "find"
         },
         {
             "command": 
             {
-                "action": "scrollDown"
+                "action": "resizePane",
+                "direction": "left"
             },
-            "keys": "ctrl+shift+j"
+            "keys": "alt+left"
         },
         {
             "command": 
@@ -47,13 +51,9 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "left"
+                "action": "scrollDown"
             },
-            "keys": "alt+left"
-        },
-        {
-            "command": "find"
+            "keys": "ctrl+shift+j"
         },
         {
             "command": 
@@ -242,17 +242,17 @@
         {
             "command": 
             {
-                "action": "scrollUp"
-            },
-            "keys": "ctrl+shift+k"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "previousInOrder"
             },
             "keys": "ctrl+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "keys": "ctrl+shift+k"
         },
         {
             "command": 
@@ -328,6 +328,8 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "experimental.rendering.forceFullRepaint": false,
     "experimental.rendering.software": false,
+    "initialCols": 150,
+    "initialRows": 34,
     "launchMode": "default",
     "minimizeToNotificationArea": true,
     "profiles": 
@@ -353,6 +355,7 @@
                 "startingDirectory": null
             },
             {
+                "antialiasingMode": "cleartype",
                 "bellStyle": "none",
                 "colorScheme": "catppuccin-frappe",
                 "experimental.retroTerminalEffect": false,
