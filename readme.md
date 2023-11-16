@@ -9,6 +9,9 @@
 - 配置文件Powershell快捷命令: 'wtconfig'.
 - 该wt版本为'1.16.10231.0',有且只有该版本能够正常显示lf中的中文。
 
+## colorschemes
+https://windowsterminalthemes.dev/
+
 
 ### 优点
 - 有且唯一完美显示lf和lazygit内的中文--1.16.10231.0版本
