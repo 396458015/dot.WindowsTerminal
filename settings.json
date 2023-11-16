@@ -13,10 +13,9 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "keys": "alt+up"
+                "action": "newTab",
+                "index": 1
+            }
         },
         {
             "command": "paste"
@@ -24,12 +23,17 @@
         {
             "command": 
             {
-                "action": "newTab",
-                "index": 1
-            }
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+up"
         },
         {
-            "command": "find"
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "ctrl+shift+j"
         },
         {
             "command": 
@@ -40,11 +44,7 @@
             "keys": "alt+left"
         },
         {
-            "command": 
-            {
-                "action": "scrollDown"
-            },
-            "keys": "ctrl+shift+j"
+            "command": "find"
         },
         {
             "command": 
@@ -233,17 +233,17 @@
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "previousInOrder"
+                "action": "scrollUp"
             },
-            "keys": "ctrl+shift+h"
+            "keys": "ctrl+shift+k"
         },
         {
             "command": 
             {
-                "action": "scrollUp"
+                "action": "moveFocus",
+                "direction": "previousInOrder"
             },
-            "keys": "ctrl+shift+k"
+            "keys": "ctrl+shift+h"
         },
         {
             "command": 
@@ -255,7 +255,7 @@
         },
         {
             "command": "toggleFocusMode",
-            "keys": "delete"
+            "keys": "alt+f"
         },
         {
             "command": 
@@ -283,6 +283,15 @@
         {
             "command": 
             {
+                "action": "adjustOpacity",
+                "opacity": -25,
+                "relative": true
+            },
+            "keys": "ctrl+shift+minus"
+        },
+        {
+            "command": 
+            {
                 "action": "newTab"
             },
             "keys": "ctrl+shift+n"
@@ -292,6 +301,24 @@
             {
                 "action": "quakeMode"
             }
+        },
+        {
+            "command": 
+            {
+                "action": "adjustOpacity",
+                "opacity": 25,
+                "relative": true
+            },
+            "keys": "ctrl+shift+plus"
+        },
+        {
+            "command": 
+            {
+                "action": "adjustOpacity",
+                "opacity": 0,
+                "relative": false
+            },
+            "keys": "ctrl+shift+backspace"
         }
     ],
     "alwaysShowTabs": true,
@@ -302,6 +329,7 @@
     "experimental.rendering.forceFullRepaint": false,
     "experimental.rendering.software": false,
     "launchMode": "default",
+    "minimizeToNotificationArea": true,
     "profiles": 
     {
         "defaults": 
