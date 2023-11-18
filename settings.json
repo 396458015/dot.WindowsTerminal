@@ -11,6 +11,16 @@
             }
         },
         {
+            "command": "paste"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab",
+                "index": 1
+            }
+        },
+        {
             "command": 
             {
                 "action": "resizePane",
@@ -21,21 +31,12 @@
         {
             "command": 
             {
-                "action": "newTab",
-                "index": 1
-            }
-        },
-        {
-            "command": "paste"
-        },
-        {
-            "command": 
-            {
-                "action": "adjustOpacity",
-                "opacity": -25,
-                "relative": true
+                "action": "scrollDown"
             },
-            "keys": "ctrl+shift+minus"
+            "keys": "ctrl+shift+u"
+        },
+        {
+            "command": "find"
         },
         {
             "command": 
@@ -46,14 +47,13 @@
             "keys": "alt+left"
         },
         {
-            "command": "find"
-        },
-        {
             "command": 
             {
-                "action": "scrollDown"
+                "action": "adjustOpacity",
+                "opacity": -25,
+                "relative": true
             },
-            "keys": "ctrl+shift+j"
+            "keys": "ctrl+shift+minus"
         },
         {
             "command": "unbound",
@@ -242,17 +242,16 @@
         {
             "command": 
             {
-                "action": "scrollUp"
-            },
-            "keys": "ctrl+shift+k"
+                "action": "moveFocus",
+                "direction": "previousInOrder"
+            }
         },
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "previousInOrder"
+                "action": "scrollUp"
             },
-            "keys": "ctrl+shift+h"
+            "keys": "ctrl+shift+i"
         },
         {
             "command": "toggleFocusMode",
@@ -263,8 +262,7 @@
             {
                 "action": "moveFocus",
                 "direction": "nextInOrder"
-            },
-            "keys": "ctrl+shift+l"
+            }
         },
         {
             "command": 
@@ -319,6 +317,38 @@
                 "relative": false
             },
             "keys": "ctrl+shift+backspace"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "ctrl+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "ctrl+shift+l"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "ctrl+shift+j"
         }
     ],
     "alwaysShowTabs": true,
