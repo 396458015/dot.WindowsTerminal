@@ -11,16 +11,6 @@
             }
         },
         {
-            "command": "paste"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 1
-            }
-        },
-        {
             "command": 
             {
                 "action": "resizePane",
@@ -31,12 +21,21 @@
         {
             "command": 
             {
-                "action": "scrollDown"
-            },
-            "keys": "ctrl+shift+j"
+                "action": "newTab",
+                "index": 1
+            }
         },
         {
-            "command": "find"
+            "command": "paste"
+        },
+        {
+            "command": 
+            {
+                "action": "adjustOpacity",
+                "opacity": -25,
+                "relative": true
+            },
+            "keys": "ctrl+shift+minus"
         },
         {
             "command": 
@@ -47,13 +46,14 @@
             "keys": "alt+left"
         },
         {
+            "command": "find"
+        },
+        {
             "command": 
             {
-                "action": "adjustOpacity",
-                "opacity": -25,
-                "relative": true
+                "action": "scrollDown"
             },
-            "keys": "ctrl+shift+minus"
+            "keys": "ctrl+shift+j"
         },
         {
             "command": "unbound",
@@ -242,17 +242,17 @@
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "previousInOrder"
+                "action": "scrollUp"
             },
-            "keys": "ctrl+shift+h"
+            "keys": "ctrl+shift+k"
         },
         {
             "command": 
             {
-                "action": "scrollUp"
+                "action": "moveFocus",
+                "direction": "previousInOrder"
             },
-            "keys": "ctrl+shift+k"
+            "keys": "ctrl+shift+h"
         },
         {
             "command": "toggleFocusMode",
@@ -328,10 +328,10 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "experimental.rendering.forceFullRepaint": false,
     "experimental.rendering.software": false,
-    "initialCols": 130,
-    "initialRows": 34,
+    "initialCols": 120,
+    "initialRows": 30,
     "launchMode": "default",
-    "minimizeToNotificationArea": true,
+    "minimizeToNotificationArea": false,
     "profiles": 
     {
         "defaults": 
@@ -340,6 +340,8 @@
             {
                 "face": "Delugia Mono"
             },
+            "opacity": 90,
+            "padding": "3",
             "useAcrylic": true,
             "useAtlasEngine": false
         },
