@@ -4,6 +4,38 @@
     "actions": 
     [
         {
+            "command":
+            {
+                "action": "sendInput",
+                "input": "\u001b[D"
+            },
+            "keys": "alt+h"
+        },
+        {
+            "command":
+            {
+                "action": "sendInput",
+                "input": "\u001b[B"
+            },
+            "keys": "alt+j"
+        },
+        {
+            "command":
+            {
+                "action": "sendInput",
+                "input": "\u001b[A"
+            },
+            "keys": "alt+k"
+        },
+        {
+            "command":
+            {
+                "action": "sendInput",
+                "input": "\u001b[C"
+            },
+            "keys": "alt+l"
+        },
+        {
             "command": 
             {
                 "action": "copy",
