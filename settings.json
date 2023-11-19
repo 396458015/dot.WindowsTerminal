@@ -11,16 +11,6 @@
             }
         },
         {
-            "command": "paste"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 1
-            }
-        },
-        {
             "command": 
             {
                 "action": "resizePane",
@@ -31,12 +21,21 @@
         {
             "command": 
             {
-                "action": "scrollDown"
-            },
-            "keys": "ctrl+shift+u"
+                "action": "newTab",
+                "index": 1
+            }
         },
         {
-            "command": "find"
+            "command": "paste"
+        },
+        {
+            "command": 
+            {
+                "action": "adjustOpacity",
+                "opacity": -25,
+                "relative": true
+            },
+            "keys": "ctrl+shift+minus"
         },
         {
             "command": 
@@ -47,13 +46,14 @@
             "keys": "alt+left"
         },
         {
+            "command": "find"
+        },
+        {
             "command": 
             {
-                "action": "adjustOpacity",
-                "opacity": -25,
-                "relative": true
+                "action": "scrollDown"
             },
-            "keys": "ctrl+shift+minus"
+            "keys": "ctrl+shift+u"
         },
         {
             "command": "unbound",
@@ -232,6 +232,14 @@
             "keys": "f11"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+numpad_minus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+numpad_plus"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -242,16 +250,16 @@
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "previousInOrder"
-            }
+                "action": "scrollUp"
+            },
+            "keys": "ctrl+shift+i"
         },
         {
             "command": 
             {
-                "action": "scrollUp"
-            },
-            "keys": "ctrl+shift+i"
+                "action": "moveFocus",
+                "direction": "previousInOrder"
+            }
         },
         {
             "command": "toggleFocusMode",
